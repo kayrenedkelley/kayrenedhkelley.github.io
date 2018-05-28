@@ -1,0 +1,102 @@
+/* Delete these CSS comments after reading. */
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    line-height: normal;
+    font-family: sans-serif;
+    /* Declare the base font-family */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 600px;
+     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: 1.25rem auto;
+    padding: .75rem;
+    background-color: #e6ffff;
+}
+
+header {
+}
+
+header h1 {
+    float: right;
+    margin-left: .5rem;
+    
+}
+
+header img {
+    float: none;
+}
+
+header .subheading {
+    float: right;
+}
+
+nav {}
+
+nav button {}
+
+/*horizontal bar*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001a33;
+
+}
+
+nav ul li {
+    float: left;
+}
+
+/* horizontal bar*/
+
+nav ul li a {
+    display: block;
+    color: #d9e5f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #800040;
+}
+
+nav ul li a:hover {
+    background-color: #22415e;
+}
+
+main {}
+
+section.forecast {
+    display: none
+}
+
+main h2 {}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {}
+
+footer {
+    background-color: #001a33;
+    color:  #d9e5f2;
+}

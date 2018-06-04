@@ -5,9 +5,8 @@
 * {
     box-sizing: border-box;
 }
-head {
-    
-}
+
+head {}
 
 /* This wildcard applies to all elements ensuring a box layout model */
 
@@ -24,19 +23,18 @@ main,
 footer {
     /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
     max-width: 1280px;
-     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     margin: 1.25rem auto;
     padding: .75rem;
     background-color: #e6ffff;
 }
 
-header {
-}
+header {}
 
 header h1 {
     float: right;
     margin-left: .5rem;
-    
+
 }
 
 header img {
@@ -47,7 +45,41 @@ header .subheading {
     float: right;
 }
 
-nav {}
+nav {
+    .hamburger {
+        font-size: 1.6rem;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+   /* .navigation {
+        display: none;
+    }
+
+    .navigation.responsive {
+        position: relative;
+        display: block;
+    }
+    .navigation.responsive li {
+        background-color: #eee;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid #ddd;
+    }
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: #000;
+    }
+    .navigation.responsive li a:hover {
+        background-color: #ddd;
+    }*/
+
+}
 
 nav button {}
 
@@ -101,5 +133,5 @@ main figure img {}
 
 footer {
     background-color: #001a33;
-    color:  #d9e5f2;
+    color: #d9e5f2;
 }

@@ -1,0 +1,255 @@
+body {
+    font-size: 16px;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#grad1 {
+    height: 200px;
+    background: blue;
+    background: linear-gradient(blue, pink);
+   
+}
+
+#grad2 {
+    height: 200px;
+    background: purple;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(purple, #00e6e6, black);
+    /* Standard syntax (must be last) */
+}
+
+#grad3 {
+    height: 400px;
+    background: green;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(green, pink, blue, yellow);
+    /* Standard syntax (must be last) */
+}
+
+
+/* Left to Right*/
+
+#grad4 {
+    height: 200px;
+    background: blue;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, blue, pink);
+    /* Standard syntax (must be last) */
+}
+
+#grad5 {
+    height: 200px;
+    background: purple;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, purple, blue, black);
+    /* Standard syntax (must be last) */
+}
+
+#grad6 {
+    height: 200px;
+    background: green;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to left, green, pink, blue, yellow);
+    /* Standard syntax (must be last) */
+}
+
+
+/*Diangonal*/
+
+#grad7 {
+    height: 200px;
+    background: blue;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, blue, pink);
+    /* Standard syntax (must be last) */
+}
+
+#grad8 {
+    height: 200px;
+    background: purple;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, purple, blue, black);
+    /* Standard syntax (must be last) */
+}
+
+#grad9 {
+    height: 200px;
+    background: green;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom left, green, pink, blue, yellow);
+    /* Standard syntax (must be last) */
+}
+
+
+/*Gradient Background*/
+
+#grad10 {
+    height: 200px;
+    background: red;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    /* Standard syntax (must be last) */
+}
+
+
+/*Transparency*/
+
+#grad11 {
+    height: 200px;
+    background: #00e6e6;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, rgba(0, 230, 230, 1), rgba(0, 230, 230, 0));
+    /* Standard syntax (must be last) */
+}
+
+
+/*Repeating Linear Gradient*/
+
+#grad12 {
+    height: 200px;
+    background: blue;
+    /* For browsers that do not support gradients */
+    background: repeating-linear-gradient(blue, yellow 10%, black 20%);
+    /* Standard syntax (must be last) */
+}
+
+#grad13 {
+    height: 200px;
+    background: black;
+    /* For browsers that do not support gradients */
+    background: repeating-linear-gradient(45deg, black, yellow 7%, green 10%);
+    /* Standard syntax (must be last) */
+}
+
+#grad14 {
+    height: 200px;
+    background: purple;
+    /* For browsers that do not support gradients */
+    background: repeating-linear-gradient(190deg, purple, pink 7%, black 10%);
+    /* Standard syntax (must be last) */
+}
+
+#grad15 {
+    height: 200px;
+    background: purple;
+    /* For browsers that do not support gradients */
+    background: repeating-linear-gradient(90deg, purple, yellow 7%, pink 10%);
+    /* Standard syntax (must be last) */
+}
+
+
+/*Radial gradient evenly spaced color stops*/
+
+#grad16 {
+    height: 200px;
+    width: 400px;
+    /*can make shorter*/
+    background: blue;
+    /* For browsers that do not support gradients */
+    background: radial-gradient(blue, pink, purple);
+    /* Standard syntax (must be last) */
+}
+
+
+/*Rad Grad- Different spaced color stops*/
+
+#grad17 {
+    height: 150px;
+    width: auto;
+    background: black;
+    /* For browsers that do not support gradients */
+    background: radial-gradient(black 5%, yellow 15%, blue 60%);
+    /* Standard syntax (must be last) */
+}
+
+
+/*Rad Grad-Shapes*/
+
+#grad18 {
+    height: 250px;
+    width: 300px;
+    background: brown;
+    /* For browsers that do not support gradients */
+    background: radial-gradient(brown, pink, purple);
+    /* Standard syntax (must be last) */
+}
+
+#grad19 {
+    height: 250px;
+    width: 300px;
+    background: blue;
+    /* For browsers that do not support gradients */
+    background: radial-gradient(circle, blue, yellow, green);
+    /* Standard syntax (must be last) */
+}
+
+
+/*rad Grad-diff size keywords*/
+#grad20 {
+    height: 220px;
+    width: 250px;
+    background: black;
+    /* For browsers that do not support gradients */
+    background: radial-gradient(closest-side at 60% 55%, black, yellow, purple);
+    /* Standard syntax (must be last) */
+}
+
+#grad21 {
+    height: 250px;
+    width: 250px;
+    background: red;
+    /* For browsers that do not support gradients */
+    background: radial-gradient(farthest-side at 60% 55%, red, yellow, brown);
+    /* Standard syntax (must be last) */
+}
+
+#grad22 {
+    height: 250px;
+    width: 250px;
+    background: yellow;
+    /* For browsers that do not support gradients */
+    background: radial-gradient(closest-corner at 25% 55%, yellow, blue, black);
+    /* Standard syntax (must be last) */
+}
+
+#grad23 {
+    height: 250px;
+    width: 250px;
+    background: purple;
+    /* For browsers that do not support gradients */
+    background: radial-gradient(farthest-corner at 60% 55%, purple, pink, #00e6e6);
+    /* Standard syntax (must be last) */
+}
+
+
+/*Repeating Rad Grad*/
+#grad24 {
+    height: 300px;
+    width: auto;
+    background: purple;
+    /* For browsers that do not support gradients */
+    background: repeating-radial-gradient(purple, pink 10%, green 15%);
+    /* Standard syntax (must be last) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Gradients</title>
+    <meta name="author" content="Kayrene Kelley">
+    <meta name="description" content="">
+
+    <!---<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">--->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles-6/normalize.css">
+
+    <link href="styles/main.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+    <h3>Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);</h3>
+    <h3>div id="grad1" change the number to represent the next item</h3>
+
+    <h1>Linear Gradient - Top to Bottom</h1>
+    <p>This linear gradient starts at the top. It starts blue, transitioning to pink:</p>
+    <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients on any of the following examples.</p>
+
+    <div id="grad1"></div>
+
+    <p>Purple to blue to black</p>
+    <br>
+    <div id="grad2"></div>
+    <p>Green to pink to blue to yellow</p>
+    <br>
+    <div id="grad3"></div>
+
+
+
+    <h1>Linear Gradient - Left to Right</h1>
+    <p>This linear gradient starts at the left. It starts blue, transitioning to pink:</p>
+
+    <div id="grad4"></div>
+    <p>Purple to blue to black</p>
+    <br>
+    <div id="grad5"></div>
+    <p>Green to pink to blue to yellow</p>
+    <br>
+    <div id="grad6"></div>
+
+
+    <h1>Linear Gradient - Diagonal</h1>
+
+    <p>This linear gradient starts at top left. It starts blue, transitioning to pink:</p>
+
+    <div id="grad7"></div>
+    <p>Purple to blue to black</p>
+    <br>
+    <div id="grad8"></div>
+    <p>Green to pink to blue to yellow</p>
+    <br>
+    <div id="grad9"></div>
+
+
+
+    <h1>Rainbow Background with Writing</h1>
+    <div id="grad10" style="text-align:center;margin:auto;color:#001a00;font-size:60px;font-weight:bold">
+        Gradient Background
+    </div>
+
+
+
+    <h1>Linear Gradient - Transparency</h1>
+
+    <p>Colors are designated in 3 ways; color name, #000000 (can be numbers or letters), or a 'rgb' number. RGB numbers consist of 3 numbers seperated by commas; rgb(57, 230, 0).</p>
+    <br>
+    <p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p>
+
+    <div id="grad11"></div>
+
+
+    <h1>Repeating Linear Gradient</h1>
+
+    <p>A repeating gradient on horizonal lines starting with blue and finishing black</p>
+    <div id="grad12"></div>
+
+    <p>A repeating gradient on 45deg axe starting black and finishing green:</p>
+    <div id="grad13"></div>
+
+    <p>A repeating gradient on 190deg axe starting purple and finishing black:</p>
+    <div id="grad14"></div>
+
+    <p>A repeating gradient on 90deg axe starting purple and finishing pink:</p>
+    <div id="grad15"></div>
+
+
+    <h1>Radial Gradient - Evenly Spaced Color Stops</h1>
+
+    <div id="grad16"></div>
+
+
+    <h1>Radial Gradient - Differently Spaced Color Stops</h1>
+
+    <div id="grad17"></div>
+
+
+    <h1>Radial Gradient - Shapes</h1>
+
+    <h2>Ellipse (this is default):</h2>
+    <div id="grad18"></div>
+
+    <h2><strong>Circle:</strong></h2>
+    <div id="grad19"></div>
+
+
+
+    <h1>Radial Gradients - Different size keywords</h1>
+
+    <h2>closest-side:</h2>
+    <div id="grad20"></div>
+
+    <h2>farthest-side:</h2>
+    <div id="grad21"></div>
+
+    <h2>closest-corner:</h2>
+    <div id="grad22"></div>
+
+    <h2>farthest-corner (default):</h2>
+    <div id="grad23"></div>
+    
+    
+
+    <h1>Repeating Radial Gradient</h1>
+
+    <div id="grad24"></div>
+
+
+</body>
+</html>

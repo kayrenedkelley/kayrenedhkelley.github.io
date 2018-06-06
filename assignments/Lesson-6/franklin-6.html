@@ -23,15 +23,17 @@
 
 <body>
 
-    <header>
-        <img src="images-6/high%20mts%20750%20x%20500.jpg" alt="high mts" width="150" height="auto">
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images-6/high%20mts%20750%20x%20500.jpg" alt="high mts" width="150" height="auto">
+        </figure>
         <h1>High Country Weather</h1>
         <h2>Best weather around</h2>
     </header>
 
-    <nav>
-        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
-        <ul class="navigation">
+    <nav class="clearfix">
+        <button onclick="toggleMenue()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
@@ -54,6 +56,18 @@
         </figure>
 
         <h1>City of Franklin</h1>
+
+        <figure class="myphoto">
+            <img src="images-6/franklin-original.jpeg" alt="franklin" sizes="50vw" scrset="images-6/franklin-sm.jpeg 200w,
+                    images-6/franklin-md.jpeg 500w,
+                    images-6/franklin-lg.jpeg 800w,">
+            <figcaption>Outskirts of Franklin</figcaption>
+        </figure>
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum venenatis leo sed dolor tempor sodales. Aenean eu tellus in ex finibus dictum nec tincidunt eros. Etiam pretium pellentesque augue, nec interdum ipsum mollis quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis laoreet erat nulla, tristique consectetur elit auctor vel. Pellentesque imperdiet mauris urna, id pellentesque tortor ornare sed. Aliquam auctor, nulla non cursus condimentum, arcu turpis volutpat diam, sed dictum magna elit sed arcu. Nam viverra tortor dolor, id volutpat ipsum tempus non. Cras risus dui, feugiat at augue ac, ullamcorper dapibus eros. Sed maximus arcu eget mi iaculis sollicitudin. Vivamus facilisis dictum quam, nec suscipit metus tempor quis. Proin condimentum congue tincidunt. In metus turpis, ultrices quis consectetur semper, imperdiet quis lectus. Integer ac porta ex, in tempor nisl. Pellentesque auctor sit amet augue in dignissim. Vestibulum eleifend, dui id porta luctus, elit velit posuere magna, quis condimentum nisi odio et diam. Proin bibendum est nunc, sit amet faucibus felis condimentum eu. Duis eget interdum ipsum. Nunc dapibus lorem non ultricies euismod. Duis in est dapibus, euismod sapien eu, convallis felis. Duis pellentesque augue quis sollicitudin vehicula. Nulla consequat sodales lacus, viverra sollicitudin nisl ultricies vitae. Aenean elit diam, vestibulum ut diam tempor, rutrum euismod libero. Aliquam vel convallis diam. Etiam facilisis risus libero, ac laoreet nisl sollicitudin ac. Praesent congue interdum sagittis. Aenean a dolor in purus tempus efficitur nec ac magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </p>
+
+
         <h2>Today's Weather</h2>
         <ul>
             <li>High: 90&#8457;</li>

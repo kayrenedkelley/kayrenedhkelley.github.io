@@ -117,6 +117,16 @@ main {
     padding: 0 2%;
     min-height: 10rem;
 }
+/*background image*/
+.hero-text{
+    height: 120%;
+    background-image: url(../images-6/sweetpea.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw; 
+    text-align: center;
+    
+}
+/*city of franklin*/
 main figure.myphoto{
     width: 50%;
     margin: 0 0 0 2%;
@@ -137,6 +147,13 @@ main figure {
 }
 
 main figure img {}
+/*Clear fix to force elements from collapse*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 footer {
     background-color: #001a33;

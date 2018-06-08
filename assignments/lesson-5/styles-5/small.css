@@ -84,7 +84,18 @@ nav ul li a:hover {
     background-color: #22415e;
 }
 
-main {}
+main {
+        padding: 0 2%;
+    min-height: 10rem;
+}
+/*background image*/
+.hero-text{
+    height: 200%;
+    background-image: url(../images-5/sweetpea.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw; 
+    text-align: center;
+}
 
 section.forecast {
     display: none
@@ -98,6 +109,12 @@ main figure {
 }
 
 main figure img {}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 footer {
     background-color: #001a33;

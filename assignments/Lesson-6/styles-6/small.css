@@ -120,10 +120,11 @@ main {
 /*background image*/
 .hero-text{
     height: 120%;
-    background-image: url(../images-6/sweetpea.jpg);
+    background-image: url("../images-6/franklin-original.jpeg"); 
     background-repeat: no-repeat;
     background-size: 100vw; 
     text-align: center;
+    color:#d9e5f2; 
     
 }
 /*city of franklin*/

@@ -1,0 +1,205 @@
+/* Delete these CSS comments after reading. */
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+head {}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+    /* Declare the base font-family */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 1280px;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: 1.25rem auto;
+    padding: .75rem;
+    background-color: #e6ffff;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: #e6ffff;
+}
+
+header h1 {
+    margin: 0;
+
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+header figure.logo {
+    float: left;
+    margin: 0;
+}
+
+
+}
+
+header img {
+    float: none;
+}
+
+header .subheading {
+    float: right;
+}
+
+
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #22415e;
+}
+
+nav {
+    background-color: #e6ffff;
+    font-family: Verdana, sans-serif;
+}
+
+/*horizontal bar*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+    background-color: #001a33;
+
+}
+
+nav ul li {
+    /*float: left;*/
+}
+
+/* horizontal bar*/
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #d9e5f2;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+nav ul li.active a {
+    background-color: rgba(128, 0, 64, 0.8);
+    color: #d9e5f2;
+}
+
+nav ul li a:hover {
+    background-color: rgba(34, 65, 94, 0.8);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+/*background image*/
+
+.hero-text {
+    height: 120%;
+    background-image: url("../images-7/sweetpea.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    text-align: center;
+    color: #d9e5f2;
+
+}
+
+/*city of franklin*/
+
+main figure.myphoto {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+main figure.myphoto img {
+    width: 100%;
+}
+
+main figure.myphoto figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+section.forecast {
+    display: none;
+}
+
+main h2 {}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    
+}
+.grid div{
+    border: 1px solid rgb(34, 65, 94);
+    border-radius: 3px;
+    height: 300px;
+}
+
+
+
+
+main figure img {}
+
+/*Clear fix to force elements from collapse*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #001a33;
+    color: #d9e5f2;
+}
+
+/*Clear fix to force elements from collapse*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

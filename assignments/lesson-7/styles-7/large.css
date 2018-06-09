@@ -16,5 +16,12 @@
     nav ul li a {
         padding: .6rem 1rem;
     }
+
     /*should leave the padding as is, many computer screens are touchscreens now.*/
+    
+    main{}
+          .grid {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    
+    }
 }

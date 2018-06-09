@@ -1,4 +1,4 @@
-function doInputOutput() {
+//function doInputOutput() {
     //Get information from user.
     var temperature = parseFloat(document.getElementById('temperature').value);
     var windSpeed = parseFloat(document.getElementById('windSpeed').value);
@@ -15,7 +15,7 @@ function doInputOutput() {
  *Output: Return the winchill to the first formula and send it out with the result.
  */
 
-function windChill(tempF, speed) {
+//function windChill(tempF, speed) {
     //Simplify the formula.
     var a = 35.74;
     var b = .6215 * tempF;

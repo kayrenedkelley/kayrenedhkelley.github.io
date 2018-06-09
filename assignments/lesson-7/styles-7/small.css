@@ -136,7 +136,7 @@ main {
     background-size: 100vw;
     text-align: center;
     color: #d9e5f2;
-
+ 
 }
 
 /*city of franklin*/
@@ -162,7 +162,7 @@ section.forecast {
     display: none;
 }
 
-main h1 {
+main{
     color:#001a33;
 }
 

@@ -1,0 +1,58 @@
+/* Delete these CSS comments after reading. */
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+head {}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 20px;
+    line-height: normal;
+    font-family: 'Ubuntu', sans-serif;
+    /* Declare the base font-family */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 1280px;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: 1.25rem auto;
+    padding: .75rem;
+    /*    background-color: #e6ffff;*/
+}
+
+table, th, tbody, tr, td, tfoot {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+th {
+    background-color: #7fb9c2;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+tr:nth-child(odd){
+    background-color: #e7f0ed;
+}
+
+}
+
+tfoot{
+    background-color: #628ca6;
+}
+

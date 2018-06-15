@@ -1,0 +1,55 @@
+@media only screen and (min-width: 37.5em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    nav {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+2,7db9e8+100 */
+        background: rgb(30, 87, 153);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(30, 87, 153, 1) 2%, rgba(125, 185, 232, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(30, 87, 153, 1) 2%, rgba(125, 185, 232, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(30, 87, 153, 1) 2%, rgba(125, 185, 232, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
+        /* IE6-9 */
+    }
+
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown in the medium on up views */
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: row;
+        float: left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    section.forecast {
+        display: block;
+    }
+    /* show the 10-day forecast with the medium view and up */
+    main {}
+    .grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+
+}

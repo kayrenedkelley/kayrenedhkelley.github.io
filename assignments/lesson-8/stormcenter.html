@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>High Country Weather</title>
+    <meta name="author" content="Kayrene Kelley">
+    <meta name="description" content="High Country Weather delivers the Mu Tri-Cities weather. Complete up to date weather and articles for Franklin, Greenville, and Springfield. Best storm storm tracking center in the state of MU. Includes a photo and article gallery.">
+
+    <!---<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">--->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles-8/normalize.css">
+
+    <link href="styles-8/small.css" rel="stylesheet">
+
+    <link href="styles-8/medium.css" rel="stylesheet">
+
+    <link href="styles-8/large.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images-8/high%20mts%20750%20x%20500.jpg" alt="high mts" width="150" height="125">
+        </figure>
+        <div>
+            <h1>High Country Weather</h1>
+            <h2>Best weather around</h2>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="franklin-7.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="thankyou.html">
+            Full name:<br>
+            <input type="text" name="fulltname" value="Mickey Mouse">
+            <br> Email: <br>
+            <input type="email" name="email" value="micky.com">
+            <br>
+            Phone Number:
+            <br>
+            <input type="tel" name="number" value="2082223333">
+            <br>
+            Zip Code:
+            <br>
+            <input type="number" name="zipcode" value="88888">
+            <br>
+            Storm Date:
+            <br>
+            <input type="date" name="stormdate">
+            <br>
+            Storm Type:
+            <br>
+            <input list="storms" name="stormtype">
+            <datalist id="storms">
+            <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+            </datalist>
+            <br>
+            Storm Severity:
+            <br>
+            <input type="range" name="stormseverity" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <span id="ratingvalue">5</span>
+                          
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+
+
+<script src="scripts-8/rangeslider.js"></script>
+</html>

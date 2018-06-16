@@ -127,11 +127,28 @@ main {
     min-height: 10rem;
 }
 
+/*thank you page*/
+main.thank{
+    background-color: #e6ffff;
+    
+}
+main figure.you img{
+    margin: 10% 10% 10% 10%;
+    padding: 5px;
+/*
+    border: 2px;
+    border-color: #22415e;
+*/
+    box-shadow: 5px 5px 10px #22415e;
+    
+    
+}
+
 /*background image*/
 
 .hero-text {
     height: 120%;
-    background-image: url("../images-7/sweetpea.jpg");
+    background-image: url("../images-8/sweetpea.jpg");
     background-repeat: no-repeat;
     background-size: 100vw;
     text-align: center;

@@ -44,46 +44,35 @@
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Personal Infromation</legend>
-                <label class="top">Full Name* <input type="text" name="fulltname" required></label>
-                <label class="top"> Email <input type="email" name="email" placeholder="micky@gmail.com"></label>
-                <label class="top"> Phone Number* <input type="tel" name="phone" placeholder="2082223333"></label>
-                <label class="top">Zip Code* <input type="number" name="zipcode"></label>
-            </fieldset>
-            
-            <fieldset></fieldset>
+    <main id="thank">
+        <figure class="you">
+            <img src="images-8/thankyou300.jpg" alt="thank you" width="85%">
+        </figure>
 
-
-
-            Storm Date:
-            <br>
-            <input type="date" name="stormdate">
-            <br> Storm Type:
-            <br>
-            <input list="storms" name="stormtype">
-            <datalist id="storms">
-            <option value="Flash Flood"></option>
-                <option value="Hail"></option>
-                <option value="Hurricane"></option>
-                <option value="Thunderstorm"></option>
-                <option value="Tornado"></option>
-            </datalist>
-            <br> Storm Severity:
-            <br>
-            <input type="range" name="stormseverity" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-            <span id="ratingvalue">5</span>
-
-
-
-
-            <input type="submit" value="Submit">
-        </form>
     </main>
+    <footer>
+        <section>
+            <h3>Address</h3>
+            <p>High Country Weather</p>
+            <p>123 Main Street</p>
+            <p>Franklin, MI 87654</p>
+        </section>
+
+        <section>
+            <h3>Phone</h3>
+            <p>(801)555-1234</p>
+            <p></p>
+        </section>
+
+        <section>
+            <h3>Email</h3>
+            <p>highcountryweather@youruri.com</p>
+            <p></p>
+        </section>
+
+        <p class="footer-bar">&copy;2017 All Rights Reserved | The Mu Tri-Cities Weather Site | <span id="currentdate"></span></p>
+
+    </footer>
 </body>
-
-
-<script src="scripts-8/rangeslider.js"></script>
+    
 </html>

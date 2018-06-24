@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>High Country Weather</title>
+    <meta name="author" content="Kayrene Kelley">
+    <meta name="description" content="High Country Weather delivers the Mu Tri-Cities weather. Complete up to date weather and articles for Franklin, Greenville, and Springfield. Best storm storm tracking center in the state of MU. Includes a photo and article gallery.">
+
+    <!---<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">--->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles-9/normalize.css">
+
+    <link href="styles-9/small.css" rel="stylesheet">
+
+    <link href="styles-9/medium.css" rel="stylesheet">
+
+    <link href="styles-9/large.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images-9/high%20mts%20750%20x%20500.jpg" alt="high mts" width="150" height="125">
+        </figure>
+        <div>
+            <h1>High Country Weather</h1>
+            <h2>Best weather around</h2>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin-9.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main class="storm">
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label class="top">Full Name* <input type="text" name="fulltname" required></label>
+
+                <label class="top"> Email <input type="email" name="email" placeholder="micky@gmail.com"></label>
+
+                <label class="top"> Phone Number* <input type="tel" name="phone" placeholder="2082223333"></label>
+
+                <label class="top">Zip Code* <input type="number" name="zipcode"></label>
+            </fieldset>
+
+            <fieldset>
+
+                <legend><span>Weather Report</span></legend>
+
+                <label class="top"><span>Storm Date</span><input name="date" type="date"></label>
+
+                <div>Storm Type</div>
+                <label class="sbs"><input type="checkbox" name="flashflood" value="yes">Flash Flood</label>
+                <label class="sbs"><input type="checkbox" name="hail" value="yes">Hail</label>
+                <label class="sbs"><input type="checkbox" name="hurricane" value="yes">Hurricane</label>
+                <label class="sbs"><input type="checkbox" name="thunderstorm" value="yes">Thunderstorm</label>
+                <label class="sbs"><input type="checkbox" name="tornado" value="yes">Tornado</label>
+
+                <p>Rate the Storm: 1 = lowest, 10 = highest</p>
+
+                <label>Storm Severity<input type="range" name="stormseverity" min="1" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                    </label>
+
+                <label class="top"><span>Storm Region</span><input type="text" name="stormType" list="storms"></label>
+                <datalist id="storms">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="Franklin"></option>
+                        <option value="Greenville"></option>
+                        <option value="Springfield"></option>
+                       </datalist>
+
+                <legend>
+                    <div>In-Danger Level</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no">No</label>
+                </legend>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Additional Information</legend>
+                <label class="top">Tell us if you have any other infromation to update on conditions.</label>
+                <div class="info">
+                    <textarea rows="10" cols="50" placeholder="damages from the storm or road conditions"></textarea>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Send My Weather Information" class="submitBtn">
+
+
+            <li><a href="thanks.html"></a></li>
+
+        </form>
+    </main>
+
+    <footer>
+        <section>
+            <h3>Address</h3>
+            <p>High Country Weather</p>
+            <p>123 Main Street</p>
+            <p>Franklin, MI 87654</p>
+        </section>
+
+        <section>
+            <h3>Phone</h3>
+            <p>(801)555-1234</p>
+            <p></p>
+        </section>
+
+        <section>
+            <h3>Email</h3>
+            <p>highcountryweather@youruri.com</p>
+            <p></p>
+        </section>
+
+        <p class="footer-bar">&copy;2017 All Rights Reserved | The Mu Tri-Cities Weather Site | <span id="currentdate"></span></p>
+
+    </footer>
+
+</body>
+
+<script src="scripts-9/hamburger.js"></script>
+<script src="scripts-9/rangeslider.js"></script>
+<script src="scripts-9/currentdate.js"></script>
+    
+</html>

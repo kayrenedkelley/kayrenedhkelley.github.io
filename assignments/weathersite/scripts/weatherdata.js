@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','https://api.openweathermap.org/data/2.5/weather?zip=55333,us&appid=7cec70771bb416e2ba95cdd1b2a79fd8&units=imperial',true);
+weatherObject.open('GET','http://api.openweathermap.org/data/2.5/weather?zip=55333,us&appid=7cec70771bb416e2ba95cdd1b2a79fd8&units=imperial',true);
 
 weatherObject.send();
 

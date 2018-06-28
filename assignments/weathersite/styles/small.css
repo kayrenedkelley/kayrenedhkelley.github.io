@@ -1,0 +1,315 @@
+/* Delete these CSS comments after reading. */
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+head {}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+    /* Declare the base font-family */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 1280px;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: 1.25rem auto;
+    padding: .75rem;
+    background-color: #e6ffff;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: #e6ffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 3%;
+
+}
+
+header h2 {
+    margin: 3%;
+    font-weight: normal;
+}
+
+header figure.logo {
+    border-radius: 5px;
+        box-shadow: 5px 5px 10px #22415e;
+    /*float: left;*/
+    margin: 0;
+}
+
+
+
+
+
+header img {
+    /*    float: none;*/
+}
+
+
+
+
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #22415e;
+}
+
+nav {
+    background-color: #e6ffff;
+    font-family: Verdana, sans-serif;
+}
+
+/*horizontal bar*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+    background-color: #001a33;
+
+}
+
+nav ul li {
+    /*float: left;*/
+}
+
+/* horizontal bar*/
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #d9e5f2;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+nav ul li.active a {
+    background-color: rgba(128, 0, 64, 0.8);
+    color: #d9e5f2;
+}
+
+nav ul li a:hover {
+    background-color: rgba(34, 65, 94, 0.8);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+/*thank you page*/
+
+main.thank {
+    background-color: #e6ffff;
+
+}
+
+main figure.you img {
+    margin: 10% 10% 10% 10%;
+    padding: 5px;
+    /*
+    border: 2px;
+    border-color: #22415e;
+*/
+    box-shadow: 5px 5px 10px #22415e;
+
+
+}
+
+/*background image*/
+
+.hero-text {
+    height: 120%;
+    background-image: url("../images/sweetpea.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    text-align: center;
+    color: #d9e5f2;
+
+}
+
+/*city of franklin*/
+
+/*
+main figure.myphoto {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+*/
+
+main figure.myphoto img {
+    width: 100%;
+}
+
+main figure.myphoto figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+section.forecast {
+    display: none;
+}
+
+main {
+    color: #001a33;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+}
+
+.grid div {
+    border: 1px solid rgb(128, 0, 64);
+    border-radius: 5px;
+    height: 300px;
+    text-align: center;
+    color: #001a33;
+    box-shadow: 5px 10px rgb(128, 0, 64);
+
+}
+
+.grid div img {
+    min-width: 100%;
+    max-height: 80%;
+
+}
+
+
+
+main figure img {}
+
+/*Clear fix to force elements from collapse*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #001a33;
+    color: #d9e5f2;
+}
+
+/*Clear fix to force elements from collapse*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main .storm {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/*actual form*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #22415e;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #001a33;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #001a33;
+    font-size: .8rem;
+
+}
+
+form label.top input,
+form label.top select {
+    /*    -webkit-appearance: none;*/
+    display: block;
+    font-size: 1rem;
+    border: solid;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    color: rgba(0, 26, 51, 0.1
+    );
+
+}
+
+form legend .sbs {
+    display: block;
+    padding: .75rem;
+    color: #001a33;
+}
+
+form.info {
+    font-size: 1rem;
+    border: solid;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    color: rgba(0, 26, 51, 0.1
+    );
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #800040;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+
+
+}

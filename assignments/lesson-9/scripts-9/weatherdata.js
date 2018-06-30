@@ -9,7 +9,7 @@ weatherObject.onload = function(){
     
     document.getElementById('place').innerHTML = weatherInfo.name;
     document.getElementById('currentTemp').innerHTML = weatherInfo.main.temp;
-    document.getElementById('currentDisc').innerHTML = weatherInfo.weather[0];
+    document.getElementById('currentDisc').innerHTML = weatherInfo.weather[0].description;
     document.getElementById('highTemp').innerHTML = weatherInfo.main.temp_max;
     document.getElementById('lowTemp').innerHTML = weatherInfo.main.temp_min;
     document.getElementById('windSpeed').innerHTML = weatherInfo.wind.speed;

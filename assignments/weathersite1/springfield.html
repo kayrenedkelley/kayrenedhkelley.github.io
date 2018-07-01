@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+<div id="wrapper">
     <header class="clearfix">
         <figure class="logo">
             <img src="images/high%20mts%20750%20x%20500.jpg" alt="high mts" width="150" height="125">
@@ -35,7 +35,7 @@
 
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav"  class="hide">
+        <ul id="primaryNav" class="hide">
             <li><a href="homepage.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
@@ -56,7 +56,7 @@
        
 
 
-        <h1>City of Franklin</h1>
+        <h1>City of Springfield</h1>
 
         <!---<figure class="myphoto">
             <img src="images-6/franklin-original.jpeg" alt="franklin" sizes="50vw" scrset="images-6/franklin-sm.jpeg 200w,
@@ -66,8 +66,8 @@
         </figure>--->
         <h1>Forecast</h1>
         <div>
-            <h2>Weather Conditions for <span id="place"></span></h2>
-            <p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
+            <h2>Weather Conditions for: <span id="place"></span></h2>
+            <p>Current Temperature is: <span id="currentTemp">00</span>&deg;</p>
             <p>Current Conditions: <span id="currentDisc"></span></p>
             <p>Today's High: <span id="highTemp">00</span>&deg;</p>
             <p> Today's Low: <span id="lowTemp">00</span>&deg;</p>
@@ -123,9 +123,9 @@
         <img src="images-9/sun-215-x-215.png" alt="sun" width="150" height="150">--->
 
         <h2>This day in History</h2>
-        <img src="images/first-mill-275-x-155.jpg" alt="first mill" width="275" height="175">
+        <img src="images/firstbaby525x350.jpg" alt="first baby" width="275" height="175">
 
-        <p>On this day in history the Franklin Mill was established. This new business helped the people of Franklin became more self reliant. With a mill at their disposal product could be ground without sending it to another town to process. The closest mill was a weeks travel away, making the trip a two week travel time in addition to the time it takes to make the desired product. The Franklin mill not only cut down travel time, it gave the man of the house a way to continue working his farm while product was being milled. It helped save some crops.</p>
+        <p>On this day in history the first child was born in the town of Springfield. A boy was born to Sheriff Hodges and his lovely wife, Mary, while the Sheriff was hunting the cattle rustler Maynard Bullion. Marry had gone to stay with her sister in law Jane in Greenville as there was only a few women in Springfield. Unfortunatly Marry passed away a day after the baby was born from complications of childbirth. The Sherriff was able to see her just before she passed and together they named the baby George. Jane was caring for a child of her own and offered to be a wet nurse for baby George. The Sherriff eventually remarried and was able to raise his children. George went on to start a ranch over in Franklin where his decendant Michael continues to ranch today. The sherriff was successful in capturing Maynard and he was hanged a week later, which just happened to be the first hanging in Springville.</p>
     </main>
 
     <footer>
@@ -156,34 +156,7 @@
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/weatherdata.js"></script>
-
+    </div>
 </body>
-    <script>
-    //remember to add an ID of "mainmenu" to the nav ul
-        var urlString = document.location.href;
-        var urlArray = urlString.split('/');
-        var pageHREF=urlArray[urlArray.length-1];
-        
-        if (pageHREF !=="") {
-            var menu = document.querySelectorAll('ul#mainmenu li a');
-            var i;
-            //loop through all the menu items in the navigation
-            for(i=0; i<menu.length; i++){
-                var currentURL=(menu[i].getAttribute("href"));
-                menu[i].parentNode.className=""; //turn off highlighting by default
-                if (currentURL===pageHREF){
-                    menu[i].parentNode.className="active";//turn on if a match
-                }//end if
-            } //end of the search for a match
-        }//end of if!==
-        
-    </script>
 
 </html>
-
-
-
-
-
-
-

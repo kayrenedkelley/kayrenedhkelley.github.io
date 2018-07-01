@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>High Country Weather</title>
+    <meta name="author" content="Kayrene Kelley">
+    <meta name="description" content="High Country Weather delivers the Mu Tri-Cities weather. Complete up to date weather and articles for Franklin, Greenville, and Springfield. Best storm storm tracking center in the state of MU. Includes a photo and article gallery.">
+
+    <!---<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">--->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link href="styles/small.css" rel="stylesheet">
+
+    <link href="styles/medium.css" rel="stylesheet">
+
+    <link href="styles/large.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/high%20mts%20750%20x%20500.jpg" alt="high mts" width="150" height="125">
+            </figure>
+            <div>
+                <h1>High Country Weather</h1>
+                <h2>Best weather around</h2>
+            </div>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+
+            <div class="story">
+                <div>
+                    <img src="images/roundup250x167.jpg" alt="Roundup">
+                </div>
+                <div class="h">
+                    <h2>Good Weather for Local Roundup and Branding</h2>
+                </div>
+                <div class="p">
+                    <p>This weekend is the Local Round up. Area ranchers plan to round up their cows and calves for shots, branding, and healthcare. Local ranchers have learned the value of helping each other. According to rancher Kuinton Kelley this practice promotes cooperation and keeps good relationships between neighbors. Most ranchers in this area are small with less than 200 head of cows. There are three big ranchers and Mike Hodges owner of the Rockin N ranch sends his hands to help with the round up. The weekend after, Mike does his roundup. "It's worth it, the other ranchers and their hands come to help me in return". Mike is the only one of the big three to extend this kind of helping hand.</p>
+                </div>
+
+
+            </div>
+            <div class="flex-container">
+                <div>
+                    <img src="images/franklinvillage240x160.jpg" alt="City of Franklin">
+                    <h2>Information for <span id="town"></span></h2>
+                    <h3>Motto: <span id="motto"></span></h3>
+                    <h3>Year Founded: <span id="yrFound"></span></h3>
+                    <h3>Population: <span id="curPop"></span></h3>
+                    <h3>Annual Rainfall: <span id="aveRain"></span> inches</h3>
+                </div>
+
+                <div>
+                    <img src="images/greenville250x167.jpg" alt="Greenville">
+                    <h2>Information for <span id="town1"></span></h2>
+                    <h3>Motto: <span id="motto1"></span></h3>
+                    <h3>Year Founded: <span id="yrFound1"></span></h3>
+                    <h3>Population: <span id="curPop1"></span></h3>
+                    <h3>Annual Rainfall: <span id="aveRain1"></span> inches</h3>
+                </div>
+
+                <div>
+                    <img src="images/springfield225x169.jpg" alt="Springfield">
+                    <h2>Information for <span id="town3"></span></h2>
+                    <h3>Motto: <span id="motto3"></span></h3>
+                    <h3>Year Founded: <span id="yrFound3"></span></h3>
+                    <h3>Population: <span id="curPop3"></span></h3>
+                    <h3>Annual Rainfall: <span id="aveRain3"></span> inches</h3>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <section class="a">
+                <h3>Address</h3>
+                <p>High Country Weather</p>
+                <p>123 Main Street</p>
+                <p>Franklin, MI 87654</p>
+            </section>
+
+            <section class="b">
+                <h3>Phone</h3>
+                <p>(801)555-1234</p>
+                <p></p>
+            </section>
+
+            <section class="c">
+                <h3>Email</h3>
+                <p>highcountryweather@youruri.com</p>
+                <p></p>
+            </section>
+
+            <p class="footer-bar">&copy;2017 All Rights Reserved | The Mu Tri-Cities Weather Site | <span id="currentdate"></span></p>
+
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/towndata.js"></script>
+    </div>
+</body>
+
+</html>

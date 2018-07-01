@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+<div id="wrapper">
     <header class="clearfix">
         <figure class="logo">
             <img src="images/high%20mts%20750%20x%20500.jpg" alt="high mts" width="150" height="125">
@@ -35,7 +35,7 @@
 
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="primaryNav"  class="hide">
+        <ul id="primaryNav" class="hide">
             <li><a href="homepage.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
@@ -66,8 +66,8 @@
         </figure>--->
         <h1>Forecast</h1>
         <div>
-            <h2>Weather Conditions for <span id="place"></span></h2>
-            <p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
+            <h2>Weather Conditions for: <span id="place"></span></h2>
+            <p>Current Temperature is: <span id="currentTemp">00</span>&deg;</p>
             <p>Current Conditions: <span id="currentDisc"></span></p>
             <p>Today's High: <span id="highTemp">00</span>&deg;</p>
             <p> Today's Low: <span id="lowTemp">00</span>&deg;</p>
@@ -156,34 +156,7 @@
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/weatherdata.js"></script>
-
+    </div>
 </body>
-    <script>
-    //remember to add an ID of "mainmenu" to the nav ul
-        var urlString = document.location.href;
-        var urlArray = urlString.split('/');
-        var pageHREF=urlArray[urlArray.length-1];
-        
-        if (pageHREF !=="") {
-            var menu = document.querySelectorAll('ul#mainmenu li a');
-            var i;
-            //loop through all the menu items in the navigation
-            for(i=0; i<menu.length; i++){
-                var currentURL=(menu[i].getAttribute("href"));
-                menu[i].parentNode.className=""; //turn off highlighting by default
-                if (currentURL===pageHREF){
-                    menu[i].parentNode.className="active";//turn on if a match
-                }//end if
-            } //end of the search for a match
-        }//end of if!==
-        
-    </script>
 
 </html>
-
-
-
-
-
-
-

@@ -1,6 +1,11 @@
 /* Delete these CSS comments after reading. */
 
 /* This main css file contains the default rules and is geared toward the small/phone view */
+  div#wrapper {
+      max-width: 1280px;
+      margin: .5rem auto;
+      box-shadow: 1px 1px 10px #800040;
+  }
 
 * {
     box-sizing: border-box;
@@ -27,8 +32,6 @@ footer {
     margin: 1.25rem auto;
     padding: .75rem;
     background-color: #e6ffff;
-    border-style: solid;
-    border-color: #800040; 
 }
 
 header {
@@ -108,7 +111,7 @@ nav ul li a {
 }
 
 nav ul li.active a {
-    background-color: linear-gradient(#cc0066 0%, #800040 100%);
+    background-color: rgba(128, 0, 64, 0.8);
     color: #d9e5f2;
 }
 
@@ -136,10 +139,14 @@ main {
 .story {
     border: 1px solid rgb(128, 0, 64);
     border-radius: 5px;
-    height: 600px;
+    height: 650px;
     text-align: center;
     color: #001a33;
     box-shadow: 5px 5px 10px rgb(128, 0, 64);
+    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
 }
 
 .story img {
@@ -150,10 +157,16 @@ main {
     border-radius: 5px;
 }
 
+
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
 
 }
 
@@ -166,10 +179,15 @@ main {
     text-align: center;
     color: #001a33;
     box-shadow: 5px 5px 10px rgb(128, 0, 64);
+    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
 
 }
+
 .flex-container img {
-border: 1px solid rgb(128, 0, 64);
+    border: 1px solid rgb(128, 0, 64);
     border-radius: 5px;
     width: 100%;
 }
@@ -188,7 +206,7 @@ main figure.you img {
     border: 2px;
     border-color: #22415e;
 */
-    box-shadow: 5px 5px 10px #22415e;
+    box-shadow: 5px 5px 10px #800040;
 
 
 }
@@ -202,6 +220,7 @@ main figure.you img {
     background-size: 100vw;
     text-align: center;
     color: #d9e5f2;
+    text-shadow: 2px 2px 5px #001a33;
 
 }
 
@@ -250,7 +269,7 @@ main figure {
     height: 300px;
     text-align: center;
     color: #001a33;
-    box-shadow: 5px 5px 10px rgb(128, 0, 64);
+    box-shadow: 5px 10px rgb(128, 0, 64);
 
 }
 
@@ -259,9 +278,6 @@ main figure {
     max-height: 80%;
 
 }
-
-
-
 
 
 
@@ -280,6 +296,7 @@ footer {
     color: #d9e5f2;
 }
 
+
 .a {
     margin: 2%;
 }
@@ -295,7 +312,6 @@ footer {
 .footer-bar {
     margin: 2%;
 }
-
 
 /*Clear fix to force elements from collapse*/
 
@@ -344,7 +360,7 @@ form label.top select {
     padding: .75rem;
     width: 100%;
     max-width: 20rem;
-    color: rgba(0, 26, 51);
+    color: rgba(0, 26, 51, 0.1);
 
 }
 
@@ -361,7 +377,7 @@ form.info {
     padding: .75rem;
     width: 100%;
     max-width: 20rem;
-    color: rgba(0, 26, 51);
+    color: rgba(0, 26, 51, 0.1);
 }
 
 form input.submitBtn {

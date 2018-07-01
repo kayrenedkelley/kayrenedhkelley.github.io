@@ -18,10 +18,16 @@
     }
 
     /*should leave the padding as is, many computer screens are touchscreens now.*/
-    main {}
-    .grid {
+    
+    main{}
+          .grid {
         grid-template-columns: 1fr 1fr 1fr !important;
-
+    
     }
-   
+       .story{
+        display: flex;
+        height: 300px;
+        
+        
+    }
 }

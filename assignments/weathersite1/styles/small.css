@@ -329,7 +329,7 @@ main figure {
     height: 300px;
     text-align: center;
     color: #001a33;
-    box-shadow: 5px 10px rgb(128, 0, 64);
+    box-shadow: 5px 5px 10px rgb(128, 0, 64);
 
 }
 

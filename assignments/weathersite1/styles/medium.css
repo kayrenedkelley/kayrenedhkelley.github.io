@@ -51,6 +51,18 @@
         flex-direction: row;
     }
 
+    
+    .firstmill {
+        border: 1px solid rgb(128, 0, 64);
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgb(128, 0, 64);
+/*        text-align: left;*/
+       
+        margin-top: 2%;
+        margin-bottom: 2%;
+        
+    }
+
     section.forecast {
         display: block;
     }
@@ -59,31 +71,31 @@
     .grid {
         grid-template-columns: 1fr 1fr !important;
     }
-    .story .h{
-    display: flex;
-    align-content: center;
-    
-}
-.story .p {
-    align-self: flex-end;
-  
+    .story .h {
+        display: flex;
+        align-content: center;
+
     }
-    .story{
+    .story .p {
+        align-self: flex-end;
+
+    }
+    .story {
         display: flex;
         height: 400px;
-        
-        
+
+
     }
-    
-    .story img{
+
+    .story img {
         display: flex;
         flex-direction: row;
         min-height: 250px;
-        
-        
+
+
     }
-        
-    .flex-container > div{
+
+    .flex-container > div {
         height: 550px;
     }
 

@@ -1,11 +1,12 @@
 /* Delete these CSS comments after reading. */
 
 /* This main css file contains the default rules and is geared toward the small/phone view */
-  div#wrapper {
-      max-width: 1280px;
-      margin: .5rem auto;
-      box-shadow: 1px 1px 10px #800040;
-  }
+
+div#wrapper {
+    max-width: 1280px;
+    margin: .5rem auto;
+    box-shadow: 1px 1px 10px #800040;
+}
 
 * {
     box-sizing: border-box;
@@ -134,6 +135,32 @@ main {
     min-height: 10rem;
 }
 
+/*First Day stories*/
+
+.firstmill {
+    border: 1px solid rgb(128, 0, 64);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(128, 0, 64);
+    text-align: center;
+    padding: 1%;
+}
+
+.firsttrain {
+    border: 1px solid rgb(128, 0, 64);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(128, 0, 64);
+    text-align: center;
+    padding: 1%;
+}
+
+.firstbaby {
+    border: 1px solid rgb(128, 0, 64);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(128, 0, 64);
+    text-align: center;
+    padding: 1%;
+}
+
 /*homepage*/
 
 .story {
@@ -192,6 +219,44 @@ main {
     width: 100%;
 }
 
+/*table build*/
+
+
+
+table,
+th,
+tbody,
+tr,
+td,
+tfoot {
+    border: 1px solid black;
+    /*    border-collapse: collapse;*/
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+table {
+    box-shadow: 5px 5px 10px rgb(128, 0, 64);
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: #001a33;
+    color: white;
+
+}
+
+tr {
+    background-color: #001a33;
+    color: white;
+}
+
+
+
+
 /*thank you page*/
 
 main.thank {
@@ -221,18 +286,13 @@ main figure.you img {
     text-align: center;
     color: #d9e5f2;
     text-shadow: 2px 2px 5px #001a33;
-
+   box-shadow: 5px 5px 10px #800040;
+/*    border-radius: 5px;*/
 }
 
 /*city of franklin*/
 
-/*
-main figure.myphoto {
-    width: 50%;
-    margin: 0 0 0 2%;
-    float: right;
-}
-*/
+
 
 main figure.myphoto img {
     width: 100%;

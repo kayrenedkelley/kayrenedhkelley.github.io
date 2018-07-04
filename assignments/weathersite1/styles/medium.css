@@ -71,21 +71,26 @@
     .grid {
         grid-template-columns: 1fr 1fr !important;
     }
-    .story .h {
+        .story {
         display: flex;
-        align-content: center;
+        flex-direction: row;
+      
 
+
+    }
+    .story .h {
+    
+        align-content: center;
+         padding: 5%;
+    }
+/*
     }
     .story .p {
         align-self: flex-end;
 
     }
-    .story {
-        display: flex;
-        height: 400px;
+*/
 
-
-    }
 
     .story img {
         display: flex;
@@ -95,7 +100,7 @@
 
     }
 
-    .flex-container > div {
+    .flex-container div {
         height: 550px;
     }
 

@@ -5,48 +5,120 @@
     <title>Alcove Digital Systems</title>
     <link rel="stylesheet" href="styles/main.css">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!--     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+    <!--     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
     <script>
         $(function() {
             // All jQuery code goes here
-//            alert('Hello jQuery!!');
+            //            alert('Hello jQuery!!');
+           // $('#logo').css('opacity', 0.4);
+            
+           //$('.servicesBtn').css('color', '#FFF');
+            
+            //$('button').css('border', '1px solid red');
+            
+            //$('h2').css('border', '1px solid red');
+            
+//            $('input[name="nameVal"]').css('border', '1px solid red');
+            
+            
+//            $('input[name!="phoneNum"]').css('border', '1px solid red');
+            
+           // $('input[name*="Num"]').css('border','1px solid red');
+            
+            //$('input[name$="Val"]').css('border', '1px solid red');
+            
+            //$('#alcoveLogo').next().css('background-color','rgba(255, 0, 0, 0.2)');
+            
+            //$('.box1').nextAll().css('background-color','rgba(255, 0, 0, 0.2)');
+       
+             //$('.header').children().css('background-color','rgba(255, 0, 0, 0.2)');
+            
+             //$('.navigation > li:eq(2)').parent().css('opacity','0.3');
+            
+           // $('.servicesBtn').closest('div').css('background-color','rgba(255, 0, 0, 0.2)');
+            
+           //console.log( $('input[type="text"]').css('background-color') );
+            
+//            $(function(){
+//                
+//                var toggleStyle = function(){
+//                    
+//                    var inputFields = $('input[type="text"]');
+//                    
+//                if( inputFields.css('background-color') === 'rgb(255, 0, 0)' ) {
+//                    //background to white
+//                   inputFields.css('background-color', 'rgb(255, 255, 255)' );
+//                } else {
+//                    inputFields.css('background-color', 'rgb(255, 0, 0)' ); 
+//                }
+//            }
+//              $('#ReqAQuoteBtn').click( toggleStyle );     
+//            //})
+            
+            $('.box1').prepend("<li><strong>This is brand new !!</strong></li>");
+            
+            $("<li><strong>This is also great !!</strong></li>").prependTo(".box1");
+            
+            var nameVal = $('input[name="nameVal"]');
+            
+            function FillEmpty(){
+                if( nameVal.val() == ''){
+                  nameVal.val( 'John Doe' );  
+                }
+                
+            }
+            
+            $('#ReqAQuoteBtn').click( FillEmpty );
         })
+             
+        
+        
     </script>
     <script>
-    window.onload = function(){
-       var element = document.getElementById('logo');
-        element.style.opacity = 0.2;
-        
-    }
-    window.onload = function(){
-        var elements = document.getElementsByClassName('servicesBtn');
-        for (var i = 0; i < elements.length; i ++){
-            if(i % 2 == 0){
-            elements[i].style.color = 'rgb(0, 106, 255)';
-            }
-        }
-    }
-    window.onload = function(){
-        var elemen = document.getElementsByTagName('h2');
-        
-        for (var i = 0; i <elemen.length; i ++){
-            elemen[i].style.borderColor = 'rgb(225,0,0)';
-            elemen[i].style.borderWidth = '2px';
-            elemen[i].style.borderStyle = 'solid';
-            elemen[i].style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
-        }
-    }
-    $(function(){
-        var eleme = document.querySelector(".navigation > li:nth-child(3) > a");
-        eleme.style.color = 'rgb(255, 0, 0)';
-    })
-//        $(function(){
-//            var elem = document.querySelectorAll(".navigation > li:nth-child(even) > a");
+//        //lighten logo
+//        window.onload = function() {
+//            var element = document.getElementById('logo');input
+//            element.style.opacity = 0.2;
+//
+//        }
+//        //change every other service button to blue
+//        window.onload = function() {
+//            var elements = document.getElementsByClassName('servicesBtn');
 //            
-//            for(var i = 0; i < elem.length: i ++){
-//                elem[i].style.color = 'rgb(255, 0, 0)';
+//            for (var i = 0; i < elements.length; i++) {
+//                if (i % 2 == 0) {
+//                    elements[i].style.color = 'rgb(0, 106, 255)';
+//                }
+//            }
+//        }
+//        
+//        //put red borders around h2 tags
+//        window.onload = function() {
+//            var elemen = document.getElementsByTagName('h2');
+//
+//            for (var i = 0; i < elemen.length; i++) {
+//                elemen[i].style.borderColor = 'rgb(225,0,0)';
+//                elemen[i].style.borderWidth = '2px';
+//                elemen[i].style.borderStyle = 'solid';
+//                elemen[i].style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+//            }
+//        }
+//        
+//        //change catalog to red
+//        $(function() {
+//            var eleme = document.querySelector(".navigation > li:nth-child(3) > a");
+//            eleme.style.color = 'rgb(255, 0, 0)';
+//        })
+        
+        //change even number hyperlinks
+//        $(function() {
+//            var lements = document.querySelectorAll(".navigation > li:nth-child(even) > a");
+//
+//            for (var i = 0; i < lements.length; i ++){
+//                lements[i].style.color = 'rgb(255, 0, 0)';
 //            }
 //        })
+           
     </script>
 </head>
 
@@ -55,7 +127,7 @@
     <div class="container">
         <!-- Header Div containing the Logo & Navigation Links -->
         <div class="header">
-            <div class="logo"></div>
+            <div class="logo" id="alcoveLogo"></div>
             <div class="navbar">
                 <ul class="navigation">
                     <li><a href="#">About Us</a></li>
@@ -81,7 +153,7 @@
                             <label>Full Name</label>
                         </div>
                         <div class="FieldHolder">
-                            <input type="text">
+                            <input type="text" name="nameVal">
                         </div>
                     </div>
 
@@ -90,7 +162,7 @@
                             <label>E-Mail</label>
                         </div>
                         <div class="FieldHolder">
-                            <input type="text">
+                            <input type="text" name="emailVal">
                         </div>
                     </div>
 
@@ -99,7 +171,7 @@
                             <label>Phone</label>
                         </div>
                         <div class="FieldHolder">
-                            <input type="text">
+                            <input type="text" name="phoneNum">
                         </div>
                     </div>
 

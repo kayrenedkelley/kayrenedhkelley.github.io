@@ -1,7 +1,7 @@
 /* Delete these CSS comments after reading. */
 
 /* This main css file contains the default rules and is geared toward the small/phone view */
-
+/*border around whole website*/
 div#wrapper {
     max-width: 1280px;
     margin: .5rem auto;
@@ -44,6 +44,7 @@ header {
 
 header h1 {
     margin: 3%;
+    align-content: center:
 
 }
 
@@ -123,6 +124,7 @@ nav ul li a:hover {
 nav ul.hide {
     display: none;
 }
+
 
 .clearfix:after {
     content: "";

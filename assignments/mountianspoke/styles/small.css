@@ -1,0 +1,363 @@
+/*border around whole website*/
+
+div#wrapper {
+    max-width: 1280px;
+    margin: 1rem auto;
+    box-shadow: 1px 1px 10px #4d004d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+    color: #003333;
+    /* Declare the base font-family */
+    background-image: url(../images/DSCN9677-3000x2250.jpg);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 0;
+    max-height: 1000px;
+}
+
+header,
+nav,
+main,
+footer {
+
+    max-width: 1280px;
+    /*    margin: 1.25rem auto;*/
+    padding: 2%;
+    /*    background-color: #e6ffff;*/
+}
+
+/*all adjustments to header*/
+
+header {
+    padding: 2%;
+    background-color: #e6ffff;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+
+header h1 {
+    margin: 3%;
+    font-weight: bold;
+
+}
+
+header h2 {
+    margin: 3%;
+    font-weight: normal;
+}
+
+
+
+header figure.logo {
+    border-radius: 2%;
+    /*    box-shadow: 5px 5px 10px #ff1a8c;*/
+    margin: 0;
+}
+
+/*all nav adjustments here*/
+
+/*hamburger button*/
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #99ffff;
+}
+
+nav {
+    font-family: verdana, sans-serif;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231 */
+    background: #e6ffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#001a1a', GradientType=0);
+    /* IE6-9 */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231 */
+    background: #e6ffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#001a1a', GradientType=0);
+    /* IE6-9 */
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #99ffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+nav ul li.active a {
+    background-color: rgba(77, 0, 77, 0.8);
+    color: #99ffff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 51, 51, 0.8);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*all main adjustments here*/
+
+main .clearfix {
+    padding: 0 2%;
+    min-height: 10rem;
+    margin-bottom: 0;
+}
+
+
+main {
+    padding: 2%;
+}
+
+/*home page*/
+
+.hmflex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.hmflex-container div {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6ffff;
+    font-weight: bold;
+    border: 2px solid rgb(0, 51, 51);
+    justify-content: space-between;
+    text-align: center;
+    color: #003333;
+    padding: 5%;
+    box-shadow: 5px 5px 10px rgba(77, 0, 77, 0.8);
+    opacity: 0.8;
+}
+
+.hmflex-container div img {
+    width: 350px;
+    height: 275px;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.flex-container div {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    background-color: #e6ffff;
+    border: 2px solid rgb(0, 51, 51);
+    justify-content: space-between;
+    text-align: center;
+    color: #003333;
+    padding: 5%;
+    box-shadow: 5px 5px 10px rgba(77, 0, 77, 0.8);
+    opacity: 0.8;
+}
+
+.flex-container div img {
+    width: 350px;
+    height: 275px;
+    justify-content: center;
+}
+
+/*tours page*/
+
+.tour {
+    text-align: center;
+    background-color: #e6ffff;
+    opacity: 0.8;
+    border: 2px solid rgb(0, 51, 51);
+    box-shadow: 5px 5px 10px rgba(77, 0, 77, 0.8);
+    margin-bottom: 3%;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+}
+
+.tour-grid div {
+    border: 2px solid rgb(0, 51, 51);
+    background-color: #e6ffff;
+    opacity: 0.8;
+    height: 400px;
+    text-align: left;
+    color: #003333;
+    box-shadow: 5px 5px 10px rgb(77, 0, 77);
+
+}
+
+.tour-grid h1 {
+    text-align: center;
+}
+
+.rentals {
+    border: 2px solid rgb(0, 51, 51);
+    background-color: #e6ffff;
+    opacity: 0.8;
+    height: 300px;
+    text-align: center;
+    color: #003333;
+    box-shadow: 5px 5px 10px rgb(77, 0, 77);
+    margin-top: 3%;
+}
+.rentals p{
+   font-weight: bold;
+}
+
+/*event page information*/
+.events{
+    padding: 2%;
+    background-color: #e6ffff;
+    text-align: center;
+    opacity: 0.8;
+    border: 2px solid rgb(0, 51, 51);
+    box-shadow: 5px 5px 10px rgb(77, 0, 77);
+    margin-bottom: 3%;
+    
+}
+.events p{
+    text-align: left;
+}
+
+.race-map{
+    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+/*    box-shadow: 5px 5px 10px rgb(77, 0, 77);*/
+}
+
+.preform h2{
+    text-align: center;
+}
+.preform{
+    border: 3px solid rgb(0, 51, 51);
+    background-color: #e6ffff;
+    box-shadow: 5px 5px 10px rgb(77, 0, 77);
+    opacity: 0.9;
+    max-width: 100vw;
+}
+
+.preform fieldset {
+    margin: 2%; 
+    border: 3px solid #003333;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.preform legend {
+    color: #003333;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+.preform label.top input,
+.preform label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    color: rgb(0, 51, 51);
+}
+
+form.info {
+    font-size: 1rem;
+    border: 3px solid #003333;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    color: rgb(0, 51, 51);
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #003333;
+    color: #99ffff;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+
+
+}
+
+/*everything but home page*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*all footer adjustments here*/
+
+footer {
+    background-color: #003333;
+    color: #99ffff;
+    margin-top: 0;
+    opacity: 0.8;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

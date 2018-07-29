@@ -1,0 +1,116 @@
+@media only screen and (min-width: 37.5em) {
+
+    /*    header goes here*/
+    header h1 {
+        font-size: 80px;
+        text-align: center;
+        margin: 0;
+    }
+
+    header h2 {
+        text-align: center;
+    }
+
+    /*    nav goes here*/
+    nav {
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231 */
+        background: #e6ffff;
+        /* Old browsers */
+/*        background: -moz-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);*/
+        /* FF3.6-15 */
+/*        background: -webkit-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);*/
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#001a1a', GradientType=0);*/
+        /* IE6-9 */
+    }
+
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown in the medium on up views */
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: row;
+        float: left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*    main goes here*/
+    .hmflex-container {
+        max-height: 500px;
+    }
+
+    .hmflex-container div {
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        text-align: center;
+
+    }
+
+    .hmflex-container div img {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+    }
+    .hmflex-container div p {
+        padding: 2%;
+    }
+
+    .flex-container {
+        max-height: 520px;
+    }
+
+    .flex-container div {
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        text-align: center;
+    }
+
+    .flex-container div img {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+    }
+    .flex-container div p {
+        padding: 2%;
+    }
+    /*tour page information*/
+    .tour-grid {
+        grid-template-columns: 1fr 1fr !important;
+   
+        
+    } 
+    .rentals{
+        max-width: 425px;
+    }
+    
+/* event page information   */
+    
+    .preform{
+        max-width: 75vw;
+    }
+}
+

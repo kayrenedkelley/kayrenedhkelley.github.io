@@ -17,13 +17,13 @@
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231 */
         background: #e6ffff;
         /* Old browsers */
-/*        background: -moz-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);*/
+        /*        background: -moz-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);*/
         /* FF3.6-15 */
-/*        background: -webkit-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);*/
+        /*        background: -webkit-linear-gradient(top, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);*/
         /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, #00ffff 0%, #00cccc 17%, #009999 33%, #006666 67%, #003333 83%, #001a1a 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-/*        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#001a1a', GradientType=0);*/
+        /*        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#001a1a', GradientType=0);*/
         /* IE6-9 */
     }
 
@@ -100,17 +100,63 @@
     /*tour page information*/
     .tour-grid {
         grid-template-columns: 1fr 1fr !important;
-   
-        
-    } 
-    .rentals{
+
+
+    }
+    .rentals {
         max-width: 425px;
     }
-    
-/* event page information   */
-    
-    .preform{
+
+    /* event page information   */
+    .preform {
         max-width: 75vw;
     }
 }
 
+/*service and repair information*/
+
+.mainpic{
+    margin-bottom: 3%;
+}
+
+.girlpic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*sales page information*/
+.flexsales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.bikea{
+     max-width: 300px;
+    margin: 3%;
+    
+}
+.bikeb{
+   max-width: 300px;
+    margin: 3%;  
+}
+.bikec{
+  max-width: 300px;
+    margin: 3%;   
+}
+
+
+/*contact us information*/
+.contact{
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact img{
+   
+    margin-right: 3%;
+}
+.contact iframe{
+    margin-left: 3%;
+}

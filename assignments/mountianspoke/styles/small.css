@@ -18,10 +18,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #003333;
     /* Declare the base font-family */
-    background-image: url(../images/DSCN9677-3000x2250.jpg);
-    background-blend-mode: lighten;
-    background-repeat: no-repeat;
-    background-size: auto;
+    /*    background-image: url(../images/DSCN9677-3000x2250.jpg);*/
+    /*    background-blend-mode: lighten;*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-size: auto;*/
     margin-bottom: 0;
     max-height: 1000px;
 }
@@ -34,7 +34,7 @@ footer {
     max-width: 1280px;
     /*    margin: 1.25rem auto;*/
     padding: 2%;
-    /*    background-color: #e6ffff;*/
+    background-color: #e6ffff;
 }
 
 /*all adjustments to header*/
@@ -44,7 +44,7 @@ header {
     background-color: #e6ffff;
     display: flex;
     justify-content: space-between;
-    opacity: 0.8;
+    /*    opacity: 0.8;*/
 }
 
 header h1 {
@@ -174,7 +174,7 @@ main {
     color: #003333;
     padding: 5%;
     box-shadow: 5px 5px 10px rgba(77, 0, 77, 0.8);
-    opacity: 0.8;
+    /*    opacity: 0.8;*/
 }
 
 .hmflex-container div img {
@@ -201,7 +201,7 @@ main {
     color: #003333;
     padding: 5%;
     box-shadow: 5px 5px 10px rgba(77, 0, 77, 0.8);
-    opacity: 0.8;
+    /*    opacity: 0.8;*/
 }
 
 .flex-container div img {
@@ -215,7 +215,7 @@ main {
 .tour {
     text-align: center;
     background-color: #e6ffff;
-    opacity: 0.8;
+    /*    opacity: 0.8;*/
     border: 2px solid rgb(0, 51, 51);
     box-shadow: 5px 5px 10px rgba(77, 0, 77, 0.8);
     margin-bottom: 3%;
@@ -223,7 +223,7 @@ main {
 
 .tour-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     grid-gap: 20px;
 
 }
@@ -231,7 +231,7 @@ main {
 .tour-grid div {
     border: 2px solid rgb(0, 51, 51);
     background-color: #e6ffff;
-    opacity: 0.8;
+    /*    opacity: 0.8;*/
     height: 400px;
     text-align: left;
     color: #003333;
@@ -246,52 +246,56 @@ main {
 .rentals {
     border: 2px solid rgb(0, 51, 51);
     background-color: #e6ffff;
-    opacity: 0.8;
+    /*    opacity: 0.8;*/
     height: 300px;
     text-align: center;
     color: #003333;
     box-shadow: 5px 5px 10px rgb(77, 0, 77);
     margin-top: 3%;
 }
-.rentals p{
-   font-weight: bold;
+
+.rentals p {
+    font-weight: bold;
 }
 
 /*event page information*/
-.events{
+
+.events {
     padding: 2%;
     background-color: #e6ffff;
     text-align: center;
-    opacity: 0.8;
+    /*    opacity: 0.8;*/
     border: 2px solid rgb(0, 51, 51);
     box-shadow: 5px 5px 10px rgb(77, 0, 77);
     margin-bottom: 3%;
-    
+
 }
-.events p{
+
+.events p {
     text-align: left;
 }
 
-.race-map{
+.race-map {
     justify-content: center;
     margin: 2%;
     padding: 2%;
-/*    box-shadow: 5px 5px 10px rgb(77, 0, 77);*/
+    /*    box-shadow: 5px 5px 10px rgb(77, 0, 77);*/
 }
 
-.preform h2{
+.preform h2 {
     text-align: center;
 }
-.preform{
+
+.preform {
     border: 3px solid rgb(0, 51, 51);
     background-color: #e6ffff;
     box-shadow: 5px 5px 10px rgb(77, 0, 77);
-    opacity: 0.9;
+    /*    opacity: 0.9;*/
     max-width: 100vw;
 }
 
 .preform fieldset {
-    margin: 2%; 
+    margin: 2%;
     border: 3px solid #003333;
     border-radius: 10px;
     padding: 2%;
@@ -334,8 +338,111 @@ form input.submitBtn {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+}
 
+/*service and repair information*/
 
+.mainpic {
+    max-height: 400px;
+}
+
+.packages {
+    padding: 2%;
+    background-color: #e6ffff;
+    text-align: center;
+    border: 3px solid rgb(0, 51, 51);
+    box-shadow: 5px 5px 10px rgb(77, 0, 77);
+    margin-bottom: 3%;
+}
+
+table,
+th,
+tbody,
+tr,
+td,
+tfoot {
+    border: 3px solid #003333;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    color: #99ffff;
+    margin-bottom: 3%;
+}
+
+table {
+    box-shadow: 5px 5px 10px rgb(77, 0, 77);
+}
+
+th {
+    background-color: #003333;
+}
+
+#title {
+    font-weight: bold;
+    color: #e6ffff;
+}
+
+tr {
+    background-color: #008080;
+}
+
+tfoot td {
+    background-color: #008080;
+}
+
+.girlpic {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*contact us page information*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.contact img {
+    margin-bottom: 3%;
+}
+
+/*sales page information*/
+
+.flexsales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.bikea {
+    border: 2px solid rgb(0, 51, 51);
+    background-color: #e6ffff;
+    text-align: left;
+    color: #003333;
+    box-shadow: 5px 5px 10px rgb(77, 0, 77);
+    margin-top: 3%;
+}
+
+.bikeb {
+    border: 2px solid rgb(0, 51, 51);
+    background-color: #e6ffff;
+    text-align: left;
+    color: #003333;
+    box-shadow: 5px 5px 10px rgb(77, 0, 77);
+    margin-top: 3%;
+}
+
+.bikec {
+    border: 2px solid rgb(0, 51, 51);
+    background-color: #e6ffff;
+    text-align: left;
+    color: #003333;
+    box-shadow: 5px 5px 10px rgb(77, 0, 77);
+    margin-top: 3%;
 }
 
 /*everything but home page*/
@@ -346,13 +453,14 @@ form input.submitBtn {
     clear: both;
 }
 
+
 /*all footer adjustments here*/
 
 footer {
     background-color: #003333;
     color: #99ffff;
     margin-top: 0;
-    opacity: 0.8;
+    /*    opacity: 0.8;*/
 }
 
 
